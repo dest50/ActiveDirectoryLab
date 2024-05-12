@@ -9,7 +9,7 @@ Install-ADDSForest `
 -DomainName "marvel.com" `
 -DomainNetbiosName "marvel" `
 -ForestMode "WinThreshold" `
--Installons:$true `
+-InstallDns:$true `
 -LogPath "C: \Windows \NTDS" `
 -NoRebootonCompletion:$false `
 -SysvolPath "C: \Windows\ SYSVOL" `
