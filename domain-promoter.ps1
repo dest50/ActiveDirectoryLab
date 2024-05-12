@@ -4,13 +4,13 @@
 Import-ModuleADDSDeployment
 Install-ADDSForest `
 -CreateDnsDelegation:$false `
--Databasepath "C: \windows \NTDS" `
+-Databasepath "C:\windows\NTDS" `
 -DomainMode "WinThreshold" `
 -DomainName "marvel.com" `
 -DomainNetbiosName "marvel" `
 -ForestMode "WinThreshold" `
 -Installons:$true `
--LogPath "C: \Windows \NTDS" `
+-LogPath "C:\Windows\NTDS" `
 -NoRebootonCompletion:$false `
--SysvolPath "C: \Windows\ SYSVOL" `
+-SysvolPath "C:\Windows\SYSVOL" `
 -Force: $true
